@@ -7,6 +7,8 @@ One of the advantages of ray marching is that it can be easily parallelized, all
 
 Overall, ray marching is a powerful technique for rendering complex scenes in computer graphics, and is an important tool for artists and developers working in the field.
 
+
+
 ## 翻譯翻譯
 
 - 從眼睛看出去的方向形成一條射線
