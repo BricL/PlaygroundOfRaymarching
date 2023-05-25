@@ -637,7 +637,7 @@
     "m_SourceType": 1,
     "m_FunctionName": "RayMatchering",
     "m_FunctionSource": "",
-    "m_FunctionBody": "float3 rayDir = viewDir * -1;\nfloat4 output = tex2D(texSampler, uv.xy);\n\nfor(int i=0; i<30; i++)\n{\n    if (output.r > 0.1 && output.g > 0.1 && output.b > 0.1)\n    {\n        float color = 1.0 -( (float)i / 30.0);\n        output = color;\n        break;\n    }\n\n    uv += rayDir * stepSize;\n    output = tex2D(texSampler, uv.xy);\n}\ninputTex = output;"
+    "m_FunctionBody": "float3 rayDir = viewDir * -1;\nfloat4 output = tex2D(texSampler, uv.xy);\n\nfor(int i=0; i<30; i++)\n{\n    if (output.r > 0.1 && output.g > 0.1 && output.b > 0.1)\n    {\n        float color = 1.0 - ( (float)i / 30.0);\n        output = color;\n        break;\n    }\n\n    uv += rayDir * stepSize;\n    output = tex2D(texSampler, uv.xy);\n}\ninputTex = output;"
 }
 
 {
